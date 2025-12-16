@@ -432,7 +432,7 @@ pub fn start() {
             fonts.font_data.insert(
                 "MSYH".to_owned(),
                 Arc::new(FontData::from_static(include_bytes!(
-                    "../../Misc/fonts/MSYH.ttf"
+                    "../../Misc/fonts/MSYH.TTC"
                 ))),
             );
 
@@ -444,7 +444,7 @@ pub fn start() {
             fonts.font_data.insert(
                 "MSYHBD".to_owned(),
                 Arc::new(FontData::from_static(include_bytes!(
-                    "../../Misc/fonts/MSYHBD.ttf"
+                    "../../Misc/fonts/MSYHBD.TTC"
                 ))),
             );
 
