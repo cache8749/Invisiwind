@@ -430,27 +430,27 @@ pub fn start() {
             let mut fonts = FontDefinitions::default();
 
             fonts.font_data.insert(
-                "Inter_18pt-Regular".to_owned(),
+                "MSYH".to_owned(),
                 Arc::new(FontData::from_static(include_bytes!(
-                    "../../Misc/fonts/Inter_18pt-Regular.ttf"
+                    "../../Misc/fonts/MSYH.TTC"
                 ))),
             );
 
             fonts.families.insert(
-                FontFamily::Name("Inter_18pt-Regular".into()),
-                vec!["Inter_18pt-Regular".to_owned()],
+                FontFamily::Name("MSYH".into()),
+                vec!["MSYH".to_owned()],
             );
 
             fonts.font_data.insert(
-                "Inter_18pt-Bold".to_owned(),
+                "MSYHBD".to_owned(),
                 Arc::new(FontData::from_static(include_bytes!(
-                    "../../Misc/fonts/Inter_18pt-Bold.ttf"
+                    "../../Misc/fonts/MSYHBD.TTC"
                 ))),
             );
 
             fonts.families.insert(
-                FontFamily::Name("Inter_18pt-Bold".into()),
-                vec!["Inter_18pt-Bold".to_owned()],
+                FontFamily::Name("MSYHBD".into()),
+                vec!["MSYHBD".to_owned()],
             );
 
             cc.egui_ctx.set_fonts(fonts);
@@ -479,7 +479,7 @@ pub fn start() {
                     TextStyle::Body,
                     FontId {
                         size: 12.0,
-                        family: egui::FontFamily::Name("Inter_18pt-Regular".into()),
+                        family: egui::FontFamily::Name("MSYH".into()),
                     },
                 );
 
@@ -487,7 +487,7 @@ pub fn start() {
                     TextStyle::Heading,
                     FontId {
                         size: 16.0,
-                        family: egui::FontFamily::Name("Inter_18pt-Bold".into()),
+                        family: egui::FontFamily::Name("MSYHBD".into()),
                     },
                 );
                 style.text_styles = text_styles;

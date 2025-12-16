@@ -1,6 +1,8 @@
 name: Build App
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
 
 jobs:
   build32:
@@ -89,3 +91,4 @@ jobs:
           files: |
             Invisiwind.zip
             Misc/Output/InvisiwindInstaller.exe
+
